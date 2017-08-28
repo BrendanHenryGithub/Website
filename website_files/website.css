@@ -1,16 +1,22 @@
-/* body {
-    width : 100%;
-    overflow : hidden;
-} */
-
+body {
+    margin: 0;
+}
 
 div.navbar{
     background-color: #000000;
     color: white;
 }
 
-div.team{
-    background-color: #ffffff;
+div.image img{
+    width:100%;
+    height: 550px;
+}
+
+div.team {
+}
+
+div.team_member{
+    display: inline-block;
 }
 
 div.work{
@@ -18,9 +24,35 @@ div.work{
     color: white;
 }
 
+div.work_paragraph{
+    width:300px;
+    float: left;
+}
+
+div.customer{
+    display: inline-block;
+}
+
+div.work img{
+    width:300px;
+}
+
 div.price{
     background-color: #f0f0f0;
 }
+
+div.pricing_plan{
+    display: inline-block;
+}
+
+div.contact_paragraph{
+    display: inline-block;
+}
+
+div.send_email{
+    display: inline-block;  
+}
+
 
 div.footer{
     background-color: #000000;
