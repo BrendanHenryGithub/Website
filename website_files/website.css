@@ -1,0 +1,28 @@
+/* body {
+    width : 100%;
+    overflow : hidden;
+} */
+
+
+div.navbar{
+    background-color: #000000;
+    color: white;
+}
+
+div.team{
+    background-color: #ffffff;
+}
+
+div.work{
+    background-color: #000000;
+    color: white;
+}
+
+div.price{
+    background-color: #f0f0f0;
+}
+
+div.footer{
+    background-color: #000000;
+    color: white;
+}
