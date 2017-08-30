@@ -4,7 +4,14 @@ body {
 
 div.navbar{
     background-color: #000000;
+}
+
+div.navbar a{
+    text-decoration: none;
     color: white;
+    padding: 8px 20px;
+    line-height: 1.5;
+    display: inline-block;
 }
 
 div.image img{
@@ -12,49 +19,81 @@ div.image img{
     height: 550px;
 }
 
-div.team {
+div.image a{
+    position: relative;
+    left: 20px;
+    bottom: 40px;
+}
+
+div.team{
+    text-align: center;
+}
+
+div.team_member_container{
+    display: flex;
 }
 
 div.team_member{
-    display: inline-block;
-}
+    flex: 1;
+} 
 
 div.work{
     background-color: #000000;
     color: white;
+    display: flex;
 }
 
 div.work_paragraph{
-    width:300px;
-    float: left;
+    flex: 1.5;
 }
 
 div.customer{
-    display: inline-block;
+    flex: 1;
+    padding:10px 10px;
 }
 
+
 div.work img{
-    width:300px;
+    width:100%;
 }
 
 div.price{
     background-color: #f0f0f0;
+    text-align: center;
+}
+
+div.price h2{
+    margin: 0;
+}
+
+div.pricing_plan_container{
+    display:flex;
 }
 
 div.pricing_plan{
-    display: inline-block;
+    flex:1;
+}
+
+div.contact{
+    display: flex;
 }
 
 div.contact_paragraph{
-    display: inline-block;
+    flex:1;
 }
 
 div.send_email{
-    display: inline-block;  
+    flex:1;
+    margin-top: 100px;
 }
 
 
 div.footer{
     background-color: #000000;
     color: white;
+}
+
+div.footer h2{
+    margin: 0;
+    text-align: center;    
 }
