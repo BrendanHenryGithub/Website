@@ -4,14 +4,36 @@ body {
 
 div.navbar{
     background-color: #000000;
+    display: flex;
 }
 
 div.navbar a{
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     padding: 8px 20px;
     line-height: 1.5;
-    display: inline-block;
+}
+
+div.navbar a i{
+    padding: 0 8px;
+}
+
+div.navbar a:nth-of-type(1){
+    background-color: #079662;
+}
+
+div.navbar a:last-of-type{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+div.navbar a:last-of-type i{
+    align-self: center;
+}
+
+div.image{
+    position: relative;
 }
 
 div.image img{
@@ -20,9 +42,13 @@ div.image img{
 }
 
 div.image a{
-    position: relative;
+    text-decoration: none;
+    color: white;
+    position: absolute;
     left: 20px;
-    bottom: 40px;
+    bottom: 20px;
+    padding: 15px;
+    background-color: #000000;
 }
 
 div.team{
@@ -38,7 +64,7 @@ div.team_member{
 } 
 
 div.work{
-    background-color: #000000;
+    background-color: rgb(100, 99, 99);
     color: white;
     display: flex;
 }
@@ -58,8 +84,9 @@ div.work img{
 }
 
 div.price{
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     text-align: center;
+    padding: 50px 0px;
 }
 
 div.price h2{
@@ -72,28 +99,110 @@ div.pricing_plan_container{
 
 div.pricing_plan{
     flex:1;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+div.pricing_plan p{
+    margin: 0;
+    padding: 18px;
+    border-bottom: 1px solid #ccc;
+}
+
+div.signup_container{
+    border-bottom: 20px solid #f0f0f0;    
+    border-top: 20px solid #f0f0f0;    
+    border-right: 30px solid #f0f0f0;    
+    border-left: 30px solid #f0f0f0; 
+}
+
+div.signup_container a{
+    text-decoration: none;
+    display: block;
+    padding: 8px; 
+    color:white;
+    background-color: #079662;  
+}
+
+div.pricing_plan>p:nth-of-type(1){
+    background-color: #000000;
+    color: white;
+}
+
+div.pricing_plan_container>div:nth-of-type(2)>p:nth-of-type(1){
+    background-color: rgb(100, 99, 99);
 }
 
 div.contact{
+    background-color: #f0f0f0;
     display: flex;
 }
 
 div.contact_paragraph{
     flex:1;
+    margin: 20px;
+}
+
+div.contact_paragraph i{
+    color: #079662;
+    padding-right:8px;
 }
 
 div.send_email{
-    flex:1;
-    margin-top: 100px;
+    flex:1.5;
+    margin: 40px;
+    padding:20px;
+    background-color: white;
 }
 
+div.send_email>form>input:nth-of-type(-n+3){
+    display: block;
+    box-sizing: border-box;
+    width:100%;
+    border:none;
+    border-bottom: 1px solid #ccc;
+    margin: 8px 0px 6px 0px;
+    padding: 6px;
+}
+
+div.send_email>form>div.last_line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.send_email>form>div.last_line input{
+    margin: 0;
+}
+
+
+div.send_email button{
+    border:none;
+    color:white;
+    padding: 8px;
+    background-color: #000000;
+}
 
 div.footer{
     background-color: #000000;
     color: white;
+    text-align: center;
 }
 
 div.footer h2{
     margin: 0;
-    text-align: center;    
+    padding: 50px 0 10px;
+}
+
+div.social_icon{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 20px;
+}
+
+div.social_icon a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    background-color: #079662;
 }
